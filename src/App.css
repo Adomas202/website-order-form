@@ -1,0 +1,62 @@
+body {
+  font-family: "Roboto",sans-serif;
+}
+
+h4 {
+  color: #D8D8D8;
+  font-family: "Helvetica";
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 6px;
+  border: 1px solid #eeeeee;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 6px;
+  border: 1px solid #eeeeee;
+}
+
+.App {
+  text-align: center;
+}
+
+.container {
+  width: 800px;
+  margin: auto;
+  margin-top: 200px;
+}
+
+.fa-caret-down {
+  color: #333;
+}
+
+select {
+  width: 100%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  border: 1px solid #eeeeee;
+  background-color: #ffffff;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+select option:checked {
+  color: green;
+}
+
+.btn {
+  padding: 8px 60px;
+  background-color: #eeeeee;
+  float: right;
+}
