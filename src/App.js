@@ -1,15 +1,24 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
 
-import PersonalInformation from './components/PersonalInformation';
+import { BrowserRouter, Route } from 'react-router-dom';
+
+import PersonalInformation from "./components/PersonalInformation";
+import OrderReview from "./components/OrderReview";
+
+import ShippingDetails from "./components/ShippingDetails";
 
 class App extends Component {
   render() {
     return (
-      <div className="container">
-        <h3>WEBSITE ORDER FORM</h3>
-        <PersonalInformation />
-      </div>
+      <BrowserRouter>
+        <div className="container">
+          <h3>WEBSITE ORDER FORM</h3>
+          <Route path="/" exact component={PersonalInformation} />
+          <Route path="/shippingDetails" component={ShippingDetails} />
+          <Route path="/orderReview" component={OrderReview} />
+        </div>
+        </BrowserRouter>
     );
   }
 }
