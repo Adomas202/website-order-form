@@ -9,6 +9,9 @@ import OrderReview from "./components/OrderReview";
 import ShippingDetails from "./components/ShippingDetails";
 
 class App extends Component {
+  constructor() {
+    super();
+  }
   render() {
     return (
       <BrowserRouter>
