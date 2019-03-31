@@ -5,10 +5,10 @@ export const MyContext = React.createContext();
 class Store extends Component {
   state = {
     name: '',
-    nationaity: '',
-    gender: '',
     address: '',
-    nationality: '',
+    nationality: null,
+    gender: null,
+    country: null,
     number: '',
   };
 

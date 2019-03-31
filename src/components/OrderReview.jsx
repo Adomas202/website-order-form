@@ -9,7 +9,7 @@ const OrderReview = () => (
     {context => (
       <>
         <h3>WEBSITE ORDER FORM - 3</h3>
-        <h4>ORDER REVIEW</h4>
+        <h4>Order review</h4>
         <table>
           <tr>
             <td>
@@ -32,7 +32,7 @@ const OrderReview = () => (
           </tr>
         </table>
         <Link to="/shippingDetails">
-          <button className="btn">Back</button>
+          <button className="btn back">Back</button>
         </Link>
       </>
     )}

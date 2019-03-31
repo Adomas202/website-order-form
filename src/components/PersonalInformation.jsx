@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import { BrowserRouter as  Link } from 'react-router-dom';
-import { MyContext } from '../components/Store';
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import { MyContext } from "../components/Store";
 
-import nationalities from '../json/nationalities.json';
+import nationalities from "../json/nationalities.json";
 
 class PersonalInformation extends Component {
   render() {
@@ -24,7 +24,7 @@ class PersonalInformation extends Component {
                 />
               </div>
               <div>
-                <label htmlFor="nationality" name="nationality">
+                <label htmlFor="nationality">
                   Nationality
                 </label>
                 <select
@@ -36,7 +36,7 @@ class PersonalInformation extends Component {
                     Nationality
                   </option>
                   {nationalities.map(nationality => (
-                    <option value={context.state.nationality}>
+                    <option>
                       {nationality}
                     </option>
                   ))}
@@ -52,14 +52,14 @@ class PersonalInformation extends Component {
                   <option value disabled selected>
                     Gender
                   </option>
-                  <option value="Male">Male</option>
-                  <option value="Female">Female</option>
+                  <option>Male</option>
+                  <option>Female</option>
                 </select>
-                <i class="fas fa-caret-down" />
+                <i className="fas fa-caret-down" />
               </div>
               <div>
                 <Link to="/shippingDetails">
-                  <button className="btn">Next</button>
+                  <button className="btn next">Next</button>
                 </Link>
               </div>
             </form>

@@ -51,10 +51,10 @@ class ShippingDetails extends Component {
               </div>
               <div>
                 <Link to="/orderReview">
-                  <button className="btn">Next</button>
+                  <button className="btn next">Next</button>
                 </Link>
                 <Link to="/">
-                  <button className="btn">Back</button>
+                  <button className="btn back">Back</button>
                 </Link>
               </div>
             </form>
