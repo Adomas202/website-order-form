@@ -34,6 +34,7 @@ input[type="text"] {
   width: 800px;
   margin: auto;
   margin-top: 200px;
+  position: relative;
 }
 
 .fa-caret-down {
@@ -71,20 +72,25 @@ select option:disabled {
   color: #a9a9a9;
 }
 
-.button-group {
-  margin-top: 30px;
+.button-group__top {
+  position: relative;
+  top: 174px;
 }
 
 .next {
   padding: 8px 60px;
   background-color: #eeeeee;
-  float: right;
+  position: absolute;
+  top: 400px;
+  right: 0;
 }
 
 .back {
   padding: 8px 60px;
   background-color: #eeeeee;
   float: left;
+  position: absolute;
+  top: 400px;
 }
 
 table {

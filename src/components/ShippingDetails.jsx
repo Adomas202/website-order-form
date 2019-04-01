@@ -6,26 +6,6 @@ import { MyContext } from "./Store";
 import countries from "../json/countries.json";
 
 class ShippingDetails extends Component {
-  constructor() {
-    super();
-    this.state = {
-      valid: false
-    };
-  }
-
-  handleToOrderReview = () => (
-    <MyContext.Consumer>
-      {context => {
-        context.map(input => {
-          if (!input) {
-            this.setState({ valid: true });
-          }
-        });
-        alert('Fill in all of the inputs');
-      }}
-    </MyContext.Consumer>
-  );
-
   render() {
     return (
       <MyContext.Consumer>
@@ -70,34 +50,17 @@ class ShippingDetails extends Component {
                   placeholder="Phone number"
                 />
               </div>
-              <div className="button-group">
+            </form>
+            <div className="button-group">
+              <div>
                 <Link to="/orderReview">
-                  {this.state.valid ? (
-                    <button
-                      onClick={this.handleToOrderReview}
-                      className="btn next"
-                    >
-                      Next
-                    </button>
-                  ) : (
-                    <button
-                      onClick={this.handleToOrderReview}
-                      className="btn next"
-                    >
-                      Next
-                    </button>
-                  )}
+                  <button className="btn next">Next</button>
                 </Link>
                 <Link to="/">
-                  <button
-                    onClick={this.handleToOrderReview}
-                    className="btn back"
-                  >
-                    Back
-                  </button>
+                  <button className="btn back">Back</button>
                 </Link>
               </div>
-            </form>
+            </div>
           </>
         )}
       </MyContext.Consumer>
