@@ -5,6 +5,7 @@ body {
 h4 {
   color: #d8d8d8;
   font-family: "Helvetica";
+  margin-bottom: 30px;
 }
 
 input[type="text"] {
@@ -39,6 +40,16 @@ input[type="text"] {
   color: #333;
 }
 
+.relative {
+  position: relative;
+}
+
+.relative i {
+  position: absolute;
+  top: 60%;
+  right: 20px;
+}
+
 select {
   width: 100%;
   padding: 12px 20px;
@@ -60,6 +71,10 @@ select option:disabled {
   color: #a9a9a9;
 }
 
+.button-group {
+  margin-top: 30px;
+}
+
 .next {
   padding: 8px 60px;
   background-color: #eeeeee;
@@ -74,10 +89,12 @@ select option:disabled {
 
 table {
   border-collapse: collapse;
+  width: 70%;
 }
 table td {
   border: 1px solid #eeeeee;
-  padding: 10px 30px 10px 0;
+  padding: 10px 50px 10px 0;
+  line-height: 30px;
 }
 table tr:first-child td {
   border-top: 0;
@@ -95,7 +112,7 @@ table tr th:last-child {
 }
 
 table td + td {
-  padding-left: 40px;
+  padding-left: 60px;
 }
 
 td:nth-child(1) {

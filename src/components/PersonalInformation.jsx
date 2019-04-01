@@ -8,7 +8,7 @@ class PersonalInformation extends Component {
   render() {
     return (
       <>
-        <h3>WEBSITE ORDER FORM - 1</h3>
+        <h3>WEBSITE ORDER FORM</h3>
         <h4>Personal data</h4>
         <MyContext.Consumer>
           {context => (
@@ -23,7 +23,7 @@ class PersonalInformation extends Component {
                   onChange={context.handleOnChange}
                 />
               </div>
-              <div>
+              <div className="relative">
                 <label htmlFor="nationality">
                   Nationality
                 </label>
@@ -41,8 +41,9 @@ class PersonalInformation extends Component {
                     </option>
                   ))}
                 </select>
+                <i class="fa fa-caret-down" aria-hidden="true"/>
               </div>
-              <div>
+              <div className="relative">
                 <label htmlFor="gender">Gender</label>
                 <select
                   name="gender"
@@ -55,9 +56,9 @@ class PersonalInformation extends Component {
                   <option>Male</option>
                   <option>Female</option>
                 </select>
-                <i className="fas fa-caret-down" />
+                <i class="fa fa-caret-down" aria-hidden="true"/>
               </div>
-              <div>
+              <div className="button-group">
                 <Link to="/shippingDetails">
                   <button className="btn next">Next</button>
                 </Link>

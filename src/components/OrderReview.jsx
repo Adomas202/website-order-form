@@ -23,17 +23,31 @@ const OrderReview = () => (
             </td>
           </tr>
           <tr>
-            <td>Nationality <br />{context.state.nationality}</td>
-            <td>Country <br />{context.state.country}</td>
+            <td>
+              Nationality <br />
+              {context.state.nationality}
+            </td>
+            <td>
+              Country <br />
+              {context.state.country}
+            </td>
           </tr>
           <tr>
-            <td>Gender <br />{context.state.gender}</td>
-            <td>Phone number <br />{context.state.number}</td>
+            <td>
+              Gender <br />
+              {context.state.gender}
+            </td>
+            <td>
+              Phone number <br />
+              {context.state.number}
+            </td>
           </tr>
         </table>
-        <Link to="/shippingDetails">
-          <button className="btn back">Back</button>
-        </Link>
+        <div className="button-group">
+          <Link to="/shippingDetails">
+            <button className="btn back">Back</button>
+          </Link>
+        </div>
       </>
     )}
   </MyContext.Consumer>
