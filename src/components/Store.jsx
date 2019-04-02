@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 export const MyContext = React.createContext();
 
@@ -9,7 +9,7 @@ class Store extends Component {
     nationality: null,
     gender: null,
     country: null,
-    number: null,
+    number: null
   };
 
   render() {

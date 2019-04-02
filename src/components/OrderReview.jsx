@@ -1,8 +1,6 @@
-import React from "react";
-
-import { MyContext } from "../components/Store";
-
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { MyContext } from './Store';
 
 const OrderReview = () => (
   <MyContext.Consumer>
@@ -18,34 +16,39 @@ const OrderReview = () => (
               {context.state.name}
             </td>
             <td>
-              Address <br />
+              Address
+              <br />
               {context.state.address}
             </td>
           </tr>
           <tr>
             <td>
-              Nationality <br />
+              Nationality
+              <br />
               {context.state.nationality}
             </td>
             <td>
-              Country <br />
+              Country
+              <br />
               {context.state.country}
             </td>
           </tr>
           <tr>
             <td>
-              Gender <br />
+              Gender
+              <br />
               {context.state.gender}
             </td>
             <td>
-              Phone number <br />
+              Phone number
+              <br />
               {context.state.number}
             </td>
           </tr>
         </table>
         <div className="button-group">
           <Link to="/shippingDetails">
-            <button className="btn back">Back</button>
+            <button type="submit" className="btn back">Back</button>
           </Link>
         </div>
       </>

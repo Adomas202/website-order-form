@@ -26,6 +26,68 @@ input[type="text"] {
   border: 1px solid #eeeeee;
 }
 
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 6px;
+  border: 1px solid #eeeeee;
+  background-color: #ffffff;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+select option:checked {
+  color: green;
+}
+
+select option:disabled {
+  color: #a9a9a9;
+}
+
+option:not(:first-of-type) {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+  width: 70%;
+}
+
+table td {
+  border: 1px solid #eeeeee;
+  padding: 10px 50px 10px 0;
+  line-height: 30px;
+}
+
+table tr:first-child td {
+  border-top: 0;
+}
+
+table tr:last-child td {
+  border-bottom: 0;
+}
+
+table tr td:first-child,
+table tr th:first-child {
+  border-left: 0;
+}
+
+table tr td:last-child,
+table tr th:last-child {
+  border-right: 0;
+}
+
+table td + td {
+  padding-left: 60px;
+}
+
+td:nth-child(1) {
+  padding-right: 90px;
+}
+
 .App {
   text-align: center;
 }
@@ -51,27 +113,6 @@ input[type="text"] {
   right: 20px;
 }
 
-select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border-radius: 6px;
-  border: 1px solid #eeeeee;
-  background-color: #ffffff;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
-select option:checked {
-  color: green;
-}
-
-select option:disabled {
-  color: #a9a9a9;
-}
-
 .button-group__top {
   position: relative;
   top: 174px;
@@ -91,36 +132,4 @@ select option:disabled {
   float: left;
   position: absolute;
   top: 400px;
-}
-
-table {
-  border-collapse: collapse;
-  width: 70%;
-}
-table td {
-  border: 1px solid #eeeeee;
-  padding: 10px 50px 10px 0;
-  line-height: 30px;
-}
-table tr:first-child td {
-  border-top: 0;
-}
-table tr:last-child td {
-  border-bottom: 0;
-}
-table tr td:first-child,
-table tr th:first-child {
-  border-left: 0;
-}
-table tr td:last-child,
-table tr th:last-child {
-  border-right: 0;
-}
-
-table td + td {
-  padding-left: 60px;
-}
-
-td:nth-child(1) {
-  padding-right: 90px;
 }
