@@ -24,6 +24,9 @@ const ShippingDetails = () => (
           <div className="relative">
             <label htmlFor="country">Country</label>
             <select
+              className={
+                context.state.country ? 'selected' : 'not-selected'
+              }
               name="country"
               onChange={context.handleOnChange}
               value={context.state.country}
@@ -35,7 +38,7 @@ const ShippingDetails = () => (
                 <option>{country.name}</option>
               ))}
             </select>
-            <i class="fa fa-caret-down" aria-hidden="true" />
+            <i className="fa fa-caret-down" aria-hidden="true" />
           </div>
           <div>
             <label htmlFor="phoneNumber">Phone number</label>
@@ -51,10 +54,10 @@ const ShippingDetails = () => (
         <div className="button-group">
           <div>
             <Link to="/orderReview">
-              <button className="btn next">Next</button>
+              <button type="submit" className="btn next">Next</button>
             </Link>
             <Link to="/">
-              <button className="btn back">Back</button>
+              <button type="submit" className="btn back">Back</button>
             </Link>
           </div>
         </div>

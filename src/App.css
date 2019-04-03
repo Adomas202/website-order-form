@@ -26,6 +26,10 @@ input[type="text"] {
   border: 1px solid #eeeeee;
 }
 
+label {
+  margin: 5px 0 0 0;
+}
+
 select {
   width: 100%;
   padding: 12px 20px;
@@ -37,18 +41,6 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-}
-
-select option:checked {
-  color: green;
-}
-
-select option:disabled {
-  color: #a9a9a9;
-}
-
-option:not(:first-of-type) {
-  color: black;
 }
 
 table {
@@ -132,4 +124,12 @@ td:nth-child(1) {
   float: left;
   position: absolute;
   top: 400px;
+}
+
+.selected {
+  color: black;
+}
+
+.not-selected {
+  color: gray;
 }

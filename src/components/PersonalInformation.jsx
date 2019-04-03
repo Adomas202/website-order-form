@@ -25,11 +25,14 @@ const PersonalInformation = () => (
             <div className="relative">
               <label htmlFor="nationality">Nationality</label>
               <select
+                className={
+                  context.state.nationality ? 'selected' : 'not-selected'
+                }
                 name="nationality"
                 onChange={context.handleOnChange}
                 value={context.state.nationality}
               >
-                <option value disabled selected>
+                <option className="not-selected" value disabled selected>
                   Nationality
                 </option>
                 {nationalities.map(nationality => (
@@ -41,6 +44,9 @@ const PersonalInformation = () => (
             <div className="relative">
               <label htmlFor="gender">Gender</label>
               <select
+                className={
+                  context.state.gender ? 'selected' : 'not-selected'
+                }
                 name="gender"
                 onChange={context.handleOnChange}
                 value={context.state.gender}
